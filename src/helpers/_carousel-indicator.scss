@@ -1,0 +1,60 @@
+.carousel-indicators {
+    bottom: -30px;
+
+    li {
+        width: 8px;
+        height: 8px;
+        border-radius: 100%;
+        background-color: $dimGray;
+        margin: 0 5px;
+
+        &.active {
+            background-color: $red;
+        }
+    }
+}
+
+.swiper-pagination {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -50px;
+    .swiper-pagination-bullet {
+        width: 8px;
+        height: 8px;
+        border-radius: 100%;
+        background-color: $dimGray;
+        margin: 5px;
+
+        &:focus {
+            outline-color: $red
+        }
+
+        &.swiper-pagination-bullet-active {
+            background-color: $red;
+        }
+    }
+}
+
+.product-slider-btn {
+    text-align: right;
+
+    div {
+        display: inline-block;
+        color: $red;
+
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+        
+        &.swiper-button-disabled {
+            color: $gray72;
+        }
+        i {
+            font-size: 1.5rem;
+        }
+    }
+
+    @media only screen and (max-width: $md) {
+        padding: 0 15px;
+    }
+}

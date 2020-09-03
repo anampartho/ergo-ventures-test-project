@@ -1,0 +1,35 @@
+.upcoming-products {
+    background: url('../images/upcoming-bg.png'), $gray97;
+    background-repeat: no-repeat;
+    background-position: right 30% bottom -50px;
+
+    .section-title {
+        margin-bottom: 25px;
+    }
+
+    ul {
+        margin-bottom: $gutterLg - 20px;
+        list-style: none;
+
+        li {
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                display: block;
+                left: -30px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 5px;
+                height: 5px;
+                border-radius: 100%;
+                background-color: $red;
+                line-height: 2;
+                font-size: 1.125rem;
+                font-weight: $light;
+                color: $eclipse;
+            }
+        }
+    }
+}

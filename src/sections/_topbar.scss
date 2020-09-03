@@ -1,0 +1,44 @@
+.topbar {
+    padding: 12px 0;
+    border-bottom: 1px solid $whisper;
+
+    .topbar-links {
+        list-style: none;
+        padding:0;
+        text-align: right;
+        margin: 0;
+
+        li {
+            display: inline-block;
+            color: $veryLightGrey;
+
+            &:not(:first-child) {
+                margin-left: 40px;
+
+                @media only screen and (max-width: $md) {
+                    margin-left: 15px;
+                }
+            }
+
+            a {
+                color: $nightRider;
+
+                i {
+                    color: $veryLightGrey;
+                }
+
+                .currency {
+                    color: $red;
+                }
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+
+        @media only screen and (max-width: $md) {
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+@import 'multislide-carousel';
+@import 'carousel-indicator';
+
+.text-center {
+    text-align: center;
+}
+
+.has-gutter {
+    padding: $gutterXl 0;
+}
+
+.has-gutter-bottom {
+    padding-bottom: $gutterXl
+}
+
+.has-gutter-small {
+    padding: $gutterSm 0;
+}

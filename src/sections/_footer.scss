@@ -1,0 +1,50 @@
+footer {
+    background-color: $whisper;
+    padding: $gutterXS 0;
+
+    .footer-social {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        font-size: 1.5625rem;
+        text-align: center;
+        color: $darkGray;
+
+        li {
+            display: inline-block;
+
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+
+            a {
+                color: $suvaGray;
+            }
+        }
+        @media only screen and (max-width: $md) {
+            margin: 15px 0;
+        }
+
+    }
+
+    .copy {
+        @media only screen and (max-width: $md) {
+            text-align: center;
+        }
+    }
+
+    .accepted-cards {
+        text-align: right;
+
+        @media only screen and (max-width: $md) {
+            text-align: center;
+        }
+    }
+
+    .col-12 {
+        @media only screen and (max-width: $md) {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+}

@@ -1,0 +1,92 @@
+.logobar {
+    background-color: #fff;
+    padding: 25px 0;
+
+    .brand {
+        @media only screen and (max-width: $md) {
+            margin-bottom: 25px;
+        }
+    }
+
+    .logobar-search {
+        width: 70%;
+
+        form {
+            &.form-inline {
+                input {
+                    width: calc(70% - 25px);
+
+                    &.form-control {
+                        margin: 0 !important;
+                    }
+                    @media screen and (min-width: $xs) {
+                        border-right: 0;
+                    }
+
+                    @media screen and (max-width: $lg) {
+                        width: calc(50% - 25px);
+                    }
+
+                    @media only screen and (max-width: $xs) {
+                        width: 100%;
+                    }
+                }
+                select {
+                    width: calc(30% - 25px);
+
+                    @media screen and (max-width: $lg) {
+                        width: calc(50% - 25px);
+                    }
+                    @media only screen and (max-width: $xs) {
+                        width: 100%;
+                        margin-top: 10px;
+                    }
+                }
+                input, select {
+                    padding: 17px 1.25rem;
+                    height: 49px;
+                    line-height: 1;
+                    margin-right: 0px;
+                    border-radius: 0;
+                    border-color: $linkWater;
+                }
+
+                .search-btn {
+                    color: $white;
+                    background-color: $red;
+                    border-radius: 0;
+                    height: 49px;
+                    width: 50px;
+                    border: 0;
+
+                    @media only screen and (max-width: $xs) {
+                        width: 100%;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width: $md) {
+            width: 100%;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+
+    .container {
+        @media only screen and (max-width: $md) {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .row {
+            @media only screen and (max-width: $md) {
+                flex-direction: column;
+            }
+        }
+    }
+
+   @media only screen and (max-width: $xl) {
+       padding-bottom: 0;
+   }
+}

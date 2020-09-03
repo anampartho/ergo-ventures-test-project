@@ -1,0 +1,51 @@
+.short-banner {
+    color: $white;
+    background-color: $red;
+    
+    p {
+        font-size: 1.125rem;
+        font-weight: $light;
+
+        i {
+            font-size: 1.625rem;
+            margin-right: 15px;
+        }
+    }
+
+    form {
+        .form-group {
+            input {
+                background-color: $white;
+                padding: 13px 20px 13px 15px;
+    
+                @media only screen and (max-width: $xl) {
+                    width: 100%;
+                }
+            }
+
+            @media only screen and (max-width: $xl) {
+                width: 100%;
+            }
+        }
+        
+
+        .btn {
+            background-color: $nightRider;
+
+            @media only screen and (max-width: $md) {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (max-width: $xl) {
+            margin-top: 35px;
+        }
+    }
+
+    .col-12 {
+        @media only screen and (max-width: $md) {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+}

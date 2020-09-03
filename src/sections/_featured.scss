@@ -1,0 +1,44 @@
+.featured-products {
+    .featured-product-slider {
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .card {
+        border: 0;
+        border-bottom: 4px solid $linkWater;
+
+        .product-image {
+            text-align: center;
+            background-color: #f1f1f1;
+            padding: 35px 35px 75px;
+        }
+
+        .card-body {
+            padding: 25px 15px;
+
+            .product-title {
+                font-size: 1.25rem;
+                font-weight: $bold;
+                color: $darkGray;
+                margin-bottom: 18px;
+            }
+
+            .old-price {
+                color: $red;
+                margin-bottom: 10px
+            }
+
+            .new-price {
+                font-size: 1.875rem;
+                color: $nero;
+                font-weight: $semibold;
+            }
+
+            .btn {
+                padding-left: 35px;
+                padding-right: 35px;
+            }
+        }
+    }
+}
